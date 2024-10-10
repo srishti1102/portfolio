@@ -10,9 +10,9 @@
 }
 :root{
     --bg-color:white;
-    --snd-bg-color:#d5fdf9;
+    --snd-bg-color:red;
     --text-color:black;
-    --main-color:rgb(75, 9, 78);
+    --main-color:green;
 }
 html{
     font-size: 62.5%;
@@ -76,18 +76,22 @@ menu-icon{
     align-items: center;
 }
 .home-img img{
-   width: 25vw;
-   border-radius: 25%;
+    margin-right:40px;
+   width: 200px;
+   height:200px;
+   border-radius: 50%;
    box-shadow: 0 0 25px var(--main-color);
    cursor:pointer;
    animation: floatImage 4s ease-in-out infinite;
    transition: 0.4s ease;
 }
-
+.home{
+    line-height:1.5em;
+}
 .home-img img:hover{
     box-shadow: 0,0,25px var(--main-color),
-                0,0,35px var(--main-color),
-                0,0,45px var(--main-color);
+                0,0,25px var(--main-color),
+                0,0,25px var(--main-color);
 
 }
 @keyframes floatImage{
@@ -104,20 +108,29 @@ menu-icon{
 .home-contant{
     font-size: 3.7rem;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 .home-contant h3:nth-of-type(2){
-    margin-bottom: 2rem;
+    margin-bottom: 2px;
+    font-size: 3rem;
 }
 span{
     color: var(--main-color);
+    font-size: 3rem;
+    margin-bottom: 4rem;
 }
 .home-content h1{
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
+    margin-bottom: 20px;
 }
-.home-contant p{
+.home-content p{
     font-size: 1.6rem;
+}
+.home-content h3{
+    font-size: 3rem;
+    margin-bottom: 30px;
 }
 .social a{
     display: inline-flex;
@@ -153,4 +166,43 @@ span{
 }
 .btn:hover{
     box-shadow: 0 0 1.6rem var(--main-color);
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    background:var(white);
+}
+.about-img img{
+    width: 25vw;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.about-img img:hover{
+    box-shadow: 0,0,25px var(--main-color),
+    0,0,35px var(--main-color),
+    0,0,45px var(--main-color);
+}
+.heading{
+    font-size: 6rem;
+    text-align: center;
+}
+.about-content{
+    padding:0 4rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 3rem;
+}
+.about-content p{
+    font-size: 3rem;
+    margin: 2rem 0 3rem;
 }
